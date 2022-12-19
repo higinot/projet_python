@@ -76,7 +76,7 @@ print(tipo_verificacao_in) // True
 6. Realizar esse processo para todos os valores da planilha de entrada "planilha_input.xlsx".
 
 ## *Funcionalidade Extra*
- - Trazer um resumo do cruzamento de dados das planilha de entrada e base em outra aba da planilha de saída "planilha_output", exemplo:
+ Trazer um resumo do cruzamento de dados das planilha de entrada e base em outra aba da planilha de saída "planilha_output", exemplo:
   - A1: 80356130025 | B1: 730050013 | C1: ANVISA e REFERENCIA ENCONTRADOS!
   - A2: 80356130025 | B2: 730050017 | C2: ANVISA ENCONTRADO E REFERENCIA NÃO ENCONTRADA!
   - A3: 80356131111 | B3: SC-TESTE | C3: ANVISA E REFERENCIA NÃO ENCONTRADOS!
