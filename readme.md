@@ -37,7 +37,7 @@ Para realizar o cruzamento de dados, são necessários os seguintes passos:
  3. Caso contenha o dado na planilha "base.xlsx", verificar se a referência da  contém na planilha base "base.xlsx", exemplo:
     - Verificar se a célula "K2" com valor "SC-4254" existe na planilha "base.xlxs" no campo "Referencia" na coluna "A".
 4. Caso os dados da "planilha_input.xlsx" sejam iguais tanto em ANVISA quanto REFERENCIA, copiar em uma nova planilha "planilha_output.xlsx" os dados da linha, exemplo:
- - Copiar linha 10702 da planilha base em uma nova planilha "planilha_output.xlsx" com os dados: 
+ - Copiar linha 10702 da planilha base "base.xlsx" com os dados: 
     - A10702: 10341350915
     - B10702: M365SC42540
     - C10702: (SC-4254)
@@ -46,6 +46,25 @@ Para realizar o cruzamento de dados, são necessários os seguintes passos:
     - F10702: BOSTON SCIENTIFIC NEUROMODULATION CORP.
     - G10702: IV - MÁXIMO RISCO
     - H10702: 03/04/2027
+5. Colar a linha 10702 em uma nova linha na planilha "planilha_output.xlsx", exemplo:
+    - A1: 10341350915
+    - B1: M365SC42540
+    - C1: (SC-4254)
+    - D1: Precision Montage™ MRI	
+    - E1: Sistema Neuroestimulador	
+    - F1: BOSTON SCIENTIFIC NEUROMODULATION CORP.
+    - G1: IV - MÁXIMO RISCO
+    - H1: 03/04/2027
+5. Copiar os dados do campo "Valor Máximo Intercambio Nacional" na coluna "L" e "Referencia Base" na coluna "AB"  para a planilha de saída "planilha_output.xlsx", exemplo:
+    - I1: 324,39
+    - J1: TNUMM
+6. Realizar esse processo para todos os valores da planilha de entrada "planilha_input.xlsx".
+
+## *Funcionalidade Extra*
+ - Trazer um resumo do cruzamento de dados das planilha de entrada e base em outra aba da planilha de saída "planilha_output", exemplo:
+  - A1: 80356130025 | B1: 730050013 | C1: ANVISA e REFERENCIA ENCONTRADOS!
+  - A2: 80356130025 | B2: 730050017 | C2: ANVISA ENCONTRADO E REFERENCIA NÃO ENCONTRADA!
+  - A3: 80356131111 | B3: SC-TESTE | C3: ANVISA E REFERENCIA NÃO ENCONTRADOS!
 
 
 ## O que o projeto faz
