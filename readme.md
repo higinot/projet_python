@@ -1,6 +1,6 @@
 # Projeto de Higienização de Tabela com Python e openpyxl
 
-Este projeto visa limpar e organizar os dados em uma tabela de clientes para garantir a precisão e a confiabilidade dos dados. Isso inclui a remoção de linhas duplicadas, a correção de erros de digitação e a formatação consistente dos dados.
+Este projeto visa limpar e organizar os dados em uma tabela de clientes para garantir a precisão e a confiabilidade dos dados, incluindo a correção de erros de digitação e a formatação consistente dos dados.
 
 A higienização de tabelas é importante para qualquer empresa que dependa de dados precisos para tomar decisões importantes. Além disso, manter os dados limpos e organizados pode ajudar a proteger a privacidade dos clientes e evitar problemas de segurança de dados.
 
@@ -36,6 +36,21 @@ Para realizar o cruzamento de dados, são necessários os seguintes passos:
     - Verificar se a célula "J2" com  valor "10341350915" existe na planilha "base.xlsx" no campo "Registro" na coluna "A"
  3. Caso contenha o dado na planilha "base.xlsx", verificar se a referência da  contém na planilha base "base.xlsx", exemplo:
     - Verificar se a célula "K2" com valor "SC-4254" existe na planilha "base.xlxs" no campo "Referencia" na coluna "A".
+    - *Observação: Utilizar a função "if str(anvisa.value) in str(teste.value):" ou if string1.__contains__(string2): 
+
+```
+\\ Exemplo de verificação de Refêrencia
+
+referencia_higienizada = "730060014"
+referencia_nao_higienizada = "730060014$#FRESAS CIRÚRGICAS RAZEDK"
+
+tipo_verificacao_in = referencia_higienizada in referencia_nao_higienizada
+tipo_verificacao_contains = referencia_nao_higienizada.__contains__(referencia_higienizada)
+
+print(tipo_verificacao_contains) // True
+print(tipo_verificacao_in) // True
+```
+
 4. Caso os dados da "planilha_input.xlsx" sejam iguais tanto em ANVISA quanto REFERENCIA, copiar em uma nova planilha "planilha_output.xlsx" os dados da linha, exemplo:
  - Copiar linha 10702 da planilha base "base.xlsx" com os dados: 
     - A10702: 10341350915
